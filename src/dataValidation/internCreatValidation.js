@@ -33,7 +33,7 @@ const isValidsName = function (name) {
 
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 
@@ -65,7 +65,7 @@ const isValidEmail = function (email) {
 
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 
@@ -97,7 +97,7 @@ const isValidMobile = function (mobile) {
 
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 
@@ -128,7 +128,7 @@ const isValidcollegeName = function (name) {
         //---------------------------------> (END FUNCTION) <-------------------------------------------//
 
     }catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 

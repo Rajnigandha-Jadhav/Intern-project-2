@@ -30,7 +30,7 @@ const isValidName = function (name) {
 
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 
@@ -56,7 +56,7 @@ const isValidfullName = function (fullName) {
          //------------------------> (END function) <-----------------------//
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 
@@ -88,7 +88,7 @@ const isValidLogoLink = function (logoLink) {
 
     }
     catch (error) {
-        return res.status(500).send({ status: false, message: error.message })
+        return error.message
     }
 }
 

@@ -10,6 +10,7 @@ const createCollege = async function (req, res) {
     try {
 
         let data = req.body
+        console.log(data)
          //------------------------> (If DON'T have any object in body) <------------------------------//
         if (Object.keys(data).length == 0) {
             return res.status(400).send({ status: false, message: "Body should not be empty" })
